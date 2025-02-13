@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All in One Dance Co. - Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+      <div class="wrapper">
+    <div class="form-container">
+        <form method="get" action="confirmation.html">
+
+    <h1>All in One Dance Co. Registration Form</h1>
+    <div class="logo-container">
+        <img src="images_media/logo.jpg" alt="Logo" class="logo">
+    </div>
+    
+    <div class="required-note">
+        <p>Note: Fields marked with <span class="required">*</span> are required.</p>
+    </div>
+    <div class="left-column">
+        <div class="form-group">
+            <label for="studentname">Student Name<span class="required">*</span>:</label>
+            <input type="text" id="studentname" name="studentname" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address<span class="required">*</span>:</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+        <div class="form-group">
+            <label for="parent_name">Parent/Guardian Name (if applicable):</label>
+            <input type="text" id="parent_name" name="parent_name">
+        </div>
+        <div class="form-group">
+            <label for="studentage">Student Age<span class="required">*</span>:</label>
+            <input type="number" id="studentage" name="studentage" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number<span class="required">*</span>:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email<span class="required">*</span>:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+    </div>
+
+    <div class="right-column">
+        <div class="form-group">
+            <label for="dance_experience">Dance Experience:</label>
+            <select id="dance_experience" name="dance_experience">
+                <option value="beginner">Beginner (0-2 years)</option>
+                <option value="intermediate">Intermediate (3-5 years)</option>
+                <option value="advanced">Advanced (6+ years)</option>
+            </select>
+        </div>
+        </div>
+
+        <div class="form-group class-checkboxes">
+            <label>Dance Classes (select one or more):</label>
+            <div>
+                <input type="checkbox" id="ballet" name="classes[]" value="Ballet" class="class-checkbox">
+                <label for="ballet">Ballet</label>
+            </div>
+            <div>
+                <input type="checkbox" id="jazz" name="classes[]" value="Jazz" class="class-checkbox">
+                <label for="jazz">Jazz</label>
+            </div>
+            <div>
+                <input type="checkbox" id="hiphop" name="classes[]" value="Hip Hop" class="class-checkbox">
+                <label for="hiphop">Hip Hop</label>
+            </div>
+            <div>
+                <input type="checkbox" id="breakdance" name="classes[]" value="Breakdance" class="class-checkbox">
+                <label for="breakdance">Breakdance</label>
+            </div>
+            <div>
+                <input type="checkbox" id="musicaltheatre" name="classes[]" value="Musical Theatre">
+                <label for="musicaltheatre">Musical Theatre</label>
+            </div>
+            <div>
+                <input type="checkbox" id="lyrical_contemporary" name="classes[]" value="Lyrical/Contemporary">
+                <label for="lyrical_contemporary">Lyrical/Contemporary</label>
+            </div>
+            <div>
+                <input type="checkbox" id="zumba" name="classes[]" value="Zumba">
+                <label for="zumba">Zumba</label>
+            </div>
+            <div>
+                <input type="checkbox" id="ballroom" name="classes[]" value="Ballroom">
+                <label for="ballroom">Ballroom</label>
+            </div>
+            <div>
+                <input type="checkbox" id="preschool" name="classes[]" value="Preschool">
+                <label for="preschool">Preschool</label>
+            </div>
+            <div>
+                <input type="checkbox" id="studio_rental" name="classes[]" value="Studio Rental">
+                <label for="studio_rental">Studio Rental</label>
+            </div>
+        </div>
+        
+        
+
+        <div class="form_group_med_info">
+            <label for="Medical_info">Medical Information</label> (if any):
+            <textarea id="Medical_info" name="med_info"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    </div>
+      </div>
+</body>
+</html>
+
+
